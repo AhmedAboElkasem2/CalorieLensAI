@@ -23,11 +23,11 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Build debug APK
+      - name: Build free offline APK
         run: gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: CalorieLensAI-debug-apk
+          name: CalorieLensAI-Free-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
